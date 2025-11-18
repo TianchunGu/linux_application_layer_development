@@ -20,8 +20,11 @@ int main() {
   char* name = "banzhang";
   printf("我是%s %d,我现在在一楼\n", name, getpid());
   // 参数没填写够也能完成跳转,错误信息会在新程序中
+  // 需要填写真实路径
   // char *argv[] = {"/home/atguigu/process_test/erlou",NULL};
-  char* args[] = {"/home/atguigu/process_test/erlou", name, NULL};
+  char* args[] = {
+      "/home/gtc/GitHub/linux_application_layer_development/process_test/erlou",
+      name, NULL};
   // 环境变量可以不传
   // char *envp[] = {NULL};
   char* envs[] = {
