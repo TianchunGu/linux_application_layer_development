@@ -5,7 +5,6 @@ fopen_test: fopen_test.c
 	-./$@
 	-rm ./$@
 
-
 fclose_test: fclose_test.c
 	-$(CC) -o $@ $^
 	-./$@
