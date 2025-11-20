@@ -42,5 +42,9 @@ int main() {
   printf("发送管道退出，进程终止\n");
   close(fd);
 
+  if (unlink(pipe_path) == -1) {
+    perror("fifo_write unlink");
+  }
+
   return 0;
 }
