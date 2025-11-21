@@ -98,4 +98,4 @@ cosumer: consumer.c
 p_c_mq: producer consumer
 
 pc_mq_clean:
-    -rm ./producer ./consumer
+	-rm ./producer ./consumer
